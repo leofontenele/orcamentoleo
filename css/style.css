@@ -1,0 +1,45 @@
+.linkrss { 
+    color: black;
+    width: 200px;
+    height: 200px;
+    font-size: 300px;
+
+}
+#coluna2 { 
+    background-color: rgb(20, 29, 23);
+    border-style: groove;
+    box-shadow: 2px 2px 30px wheat;
+    border-color: rgba(235, 227, 227, 0.752);
+    padding-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.998);
+    backdrop-filter: blur(19.4px);
+    -webkit-backdrop-filter: blur(19.4px);
+    border: 1px solid rgba(7, 71, 99, 0.93);
+}
+h2 { 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: wheat;
+    text-shadow: 2px 2px black;
+}
+label, .DescFrase { 
+    color: white;
+}
+#compra { 
+   text-align: center;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.702);
+   box-shadow: 1px 2px 15px;
+   font-family: 'Times New Roman', Times, serif;
+   margin-left: 100px;
+   color: black;
+}
+#compra:hover { 
+    background-color: rgba(61, 135, 178, 0.585);
+}
+label {
+    padding-bottom: 20px;
+}
