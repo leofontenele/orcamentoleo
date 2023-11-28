@@ -1,22 +1,29 @@
-function carregarPagina(tipos) { 
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-       
-        var resultado = document.getElementById("valoracumulado");
-        var resultadoo = document.getElementById("valortotal");  
-        var resultado12 = document.getElementById("valor12");
-        resultado.value = this.responseText;
-        resultado12.value = this.responseText;
-        resultadoo.value = this.responseText;
+function carregarPagina(tipos) {
+  var precos = [0, 10, 20, 30];
+  var precototal = 0;
 
-      }
-    };
-    xmlHttp.open("GET", "calculate.php?tipos=" + tipos, true);
-    xmlHttp.send();
+  switch (tipos) {
+    case '1':
+      precototal = precos[1];
+      break;
 
-   }
-  
+    case '2':
+      precototal = precos[2];
+      break;
+
+    case '3':
+      precototal = precos[3];
+      break;
+  }
+
+  var resultado = document.getElementById("valoracumulado");
+  var resultadoo = document.getElementById("valortotal");
+  var resultado12 = document.getElementById("valor12");
+  resultado.value = precototal + '€';
+  resultado12.value = precototal + '€';
+  resultadoo.value = precototal + '€';
+}
+
   function carregarMeses() { 
     var valor1 = parseFloat(document.getElementById("meses").value);
     var valor2 = "";   
